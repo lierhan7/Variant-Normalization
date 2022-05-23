@@ -24,9 +24,9 @@ The normalization of a variant representation in VCF consists of two parts: **pa
 
 Raw variant :
 
-| Chr  | Pos      | Ref   | Alt  | Gene | Type     | Transcript  |
-| ---- | -------- | ----- | ---- | ---- | -------- | ----------- |
-| 3    | 10183820 | CCCTA | C    | VHL  | Deletion | NM_000551.4 |
+| Chr  | Pos      | Ref   | Alt  | Gene | Strand | Type     | Transcript  |
+| ---- | -------- | ----- | ---- | ---- | ------ | -------- | ----------- |
+| 3    | 10183820 | CCCTA | C    | VHL  | +      | Deletion | NM_000551.4 |
 
 Equivalent deletions :
 
@@ -34,9 +34,9 @@ Equivalent deletions :
 
 Variant Normalization result :
 
-| Chr  | Pos      | Ref  | Alt  | Gene | Type     | Transcript  |
-| ---- | -------- | ---- | ---- | ---- | -------- | ----------- |
-| 3    | 10183823 | TACC | -    | VHL  | Deletion | NM_000551.4 |
+| Chr  | Pos      | Ref  | Alt  | Gene | Strand | Type     | Transcript  |
+| ---- | -------- | ---- | ---- | ---- | ------ | -------- | ----------- |
+| 3    | 10183823 | TACC | -    | VHL  | +      | Deletion | NM_000551.4 |
 
 
 
@@ -44,9 +44,9 @@ Variant Normalization result :
 
 Raw variant :
 
-| Chr  | Pos      | Ref  | Alt   | Gene  | Type      | Transcript  |
-| ---- | -------- | ---- | ----- | ----- | --------- | ----------- |
-| X    | 48649699 | C    | CTACT | GATA1 | Insertion | NM_002049.4 |
+| Chr  | Pos      | Ref  | Alt   | Gene  | Strand | Type      | Transcript  |
+| ---- | -------- | ---- | ----- | ----- | ------ | --------- | ----------- |
+| X    | 48649699 | C    | CTACT | GATA1 | +      | Insertion | NM_002049.4 |
 
 Equivalent insertions :
 
@@ -54,7 +54,7 @@ Equivalent insertions :
 
 Variant Normalization result:
 
-| Chr  | Pos      | Ref  | Alt  | Gene  | Type      | Transcript  |
-| ---- | -------- | ---- | ---- | ----- | --------- | ----------- |
-| X    | 48649703 | -    | TACT | GATA1 | Insertion | NM_002049.4 |
+| Chr  | Pos      | Ref  | Alt  | Gene  | Strand | Type      | Transcript  |
+| ---- | -------- | ---- | ---- | ----- | ------ | --------- | ----------- |
+| X    | 48649703 | -    | TACT | GATA1 | +      | Insertion | NM_002049.4 |
 
